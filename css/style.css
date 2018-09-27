@@ -147,7 +147,7 @@ p{
 .card{
     transition: .1s ease-in-out;
     margin-top: 50px;
-    background-color: rgba(0,0,0,.03);
+    background-color: rgba(0,0,0,.05);
 }
 
 .card:hover{
