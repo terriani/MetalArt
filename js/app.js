@@ -30,6 +30,7 @@ $("document").ready(function(){
     $(".scrollspy").scrollSpy();
     $(".galeryStill").css("display", "none");
     $(".galeryStill").css("transform", "rotateY(-180deg)");
+    $(".galeryStill").css("overflow-x", "hidden")
     $(".slider").slider();
     
 
@@ -159,14 +160,17 @@ function galery_1(){
     body.css("transform", "rotateY(-180deg)");
     body.css("background-color", "white");
     body.css("transition", "1s linear");
+    body.css("overflow", "hidden");
 
     setTimeout(function(){
         main.css("display", "none");
         header.css("display", "none");
         footer.css("display", "none");
+        btn_up.css("display", "none");
         body.css("background-color", "#111");
         $(".galeryStill").css("display", "block");
         $(".galeryStill").css("transform", "rotateY(180deg)");
+        $(".galeryStill").css("overflow-x", "hidden");
     }, 500);
 }
 
@@ -183,5 +187,6 @@ function closeGalery(){
         $(".galeryStill").css("display", "none");
         $(".galeryStill").css("transform", "rotateY(180deg)");
         $(".galeryStill").css("transition", ".5s linear");
+        $(".galeryStill").css("overflow-x", "hidden");
     }, 410);
 }
