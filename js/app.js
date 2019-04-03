@@ -164,7 +164,7 @@ function galery_1(){
         main.css("display", "none");
         header.css("display", "none");
         footer.css("display", "none");
-        body.css("background-color", "black");
+        body.css("background-color", "#111");
         $(".galeryStill").css("display", "block");
         $(".galeryStill").css("transform", "rotateY(180deg)");
     }, 500);
@@ -182,5 +182,6 @@ function closeGalery(){
         body.css("background-color", "white");
         $(".galeryStill").css("display", "none");
         $(".galeryStill").css("transform", "rotateY(180deg)");
-    }, 500);
+        $(".galeryStill").css("transition", ".5s linear");
+    }, 410);
 }
