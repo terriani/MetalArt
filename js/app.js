@@ -188,5 +188,5 @@ function closeGalery(){
         $(".galeryStill").css("transform", "rotateY(180deg)");
         $(".galeryStill").css("transition", ".5s linear");
         $(".galeryStill").css("overflow-x", "hidden");
-    }, 410);
+    }, 500);
 }
