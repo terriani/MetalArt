@@ -183,3 +183,27 @@ p{
 footer{
     transition: 1s ease-in-out;
 }
+
+.close-galery{
+    font-size: 30pt;
+    color: darkorange;
+    top: 5vh;
+    left: 80vw;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider{
+    background-color: black;
+}
+
+.portifolio{
+    cursor: pointer;
+}
+
+.caption{
+    background-color: rgba(0,0,0,.6);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

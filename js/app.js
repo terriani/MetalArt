@@ -21,12 +21,17 @@ var card1 = $(".card-1");
 var card2 = $(".card-2");
 var card3 = $(".card-3");
 var title_service = $(".title-service");
+var html = $("html");
 
 //initialize in page start
 $("document").ready(function(){
     $(".button-collapse").sideNav();
     $('.materialboxed').materialbox();
     $(".scrollspy").scrollSpy();
+    $(".galeryStill").css("display", "none");
+    $(".galeryStill").css("transform", "rotateY(-180deg)");
+    $(".slider").slider();
+    
 
     splash_screen.css("background-color", "black");
 
@@ -150,3 +155,32 @@ doc.scroll(function(){
     }
 })
 
+function galery_1(){
+    body.css("transform", "rotateY(-180deg)");
+    body.css("background-color", "white");
+    body.css("transition", "1s linear");
+
+    setTimeout(function(){
+        main.css("display", "none");
+        header.css("display", "none");
+        footer.css("display", "none");
+        body.css("background-color", "black");
+        $(".galeryStill").css("display", "block");
+        $(".galeryStill").css("transform", "rotateY(180deg)");
+    }, 500);
+}
+
+function closeGalery(){
+    body.css("transform", "rotateY(0deg)");
+    body.css("background-color", "white");
+    body.css("transition", "1s linear");
+
+    setTimeout(function(){
+        main.css("display", "block");
+        header.css("display", "block");
+        footer.css("display", "block");
+        body.css("background-color", "white");
+        $(".galeryStill").css("display", "none");
+        $(".galeryStill").css("transform", "rotateY(180deg)");
+    }, 500);
+}
