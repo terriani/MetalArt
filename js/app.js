@@ -159,7 +159,7 @@ doc.scroll(function(){
 function galery_1(){
     body.css("transform", "rotateY(-180deg)");
     body.css("background-color", "white");
-    body.css("transition", "1s linear");
+    body.css("transition", ".5s linear");
     body.css("overflow", "hidden");
 
     setTimeout(function(){
@@ -167,17 +167,16 @@ function galery_1(){
         header.css("display", "none");
         footer.css("display", "none");
         btn_up.css("display", "none");
-        body.css("background-color", "#111");
         $(".galeryStill").css("display", "block");
         $(".galeryStill").css("transform", "rotateY(180deg)");
         $(".galeryStill").css("overflow-x", "hidden");
-    }, 500);
+    }, 250);
 }
 
 function closeGalery(){
     body.css("transform", "rotateY(0deg)");
     body.css("background-color", "white");
-    body.css("transition", "1s linear");
+    body.css("transition", ".5s linear");
 
     setTimeout(function(){
         main.css("display", "block");
@@ -188,5 +187,5 @@ function closeGalery(){
         $(".galeryStill").css("transform", "rotateY(180deg)");
         $(".galeryStill").css("transition", ".5s linear");
         $(".galeryStill").css("overflow-x", "hidden");
-    }, 500);
+    }, 250);
 }
