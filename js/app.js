@@ -12,7 +12,7 @@ var win = $(window);
 var btn_up = $(".btn-up");
 var about_us = $(".about-us");
 var service = $(".services");
-var contact = $(".contact");
+var clients = $(".clients");
 var maps = $(".maps");
 var map = $(".map");
 var title_map = $(".title-map");
@@ -48,8 +48,8 @@ $("document").ready(function(){
     card3.css("opacity", 0)
     card3.css("transform", "scale(0.9)");
 
-    contact.css("opacity", 0)
-    contact.css("transform", "scale(0.9)");
+    clients.css("opacity", 0)
+    clients.css("transform", "scale(0.9)");
 
     maps.css("transform", "scale(0.9)");
 
@@ -102,7 +102,7 @@ setTimeout(function(){
 doc.scroll(function(){
     if (doc.scrollTop() > 150) {
         btn_up.css("opacity", 1);
-        btn_up.css("bottom", "10px");
+        btn_up.css("bottom", "90px");
     }else{
         btn_up.css("bottom", "-100%");
     }
@@ -135,10 +135,10 @@ doc.scroll(function(){
         card3.css("transform", "scale(1)");
     }
 
-    if(window.scrollY > contact.offset().top - window.innerHeight / 2){
-        contact.css("opacity", 1);
-        contact.css("transition", ".5s ease-out");
-        contact.css("transform", "scale(1)");
+    if(window.scrollY > clients.offset().top - window.innerHeight / 2){
+        clients.css("opacity", 1);
+        clients.css("transition", ".5s ease-out");
+        clients.css("transform", "scale(1)");
     }
 
     if (window.scrollY > title_map.offset().top - window.innerHeight / 2) {
@@ -166,7 +166,6 @@ function galery_1(){
         main.css("display", "none");
         header.css("display", "none");
         footer.css("display", "none");
-        btn_up.css("display", "none");
         $(".galeryStill").css("display", "block");
         $(".galeryStill").css("transform", "rotateY(180deg)");
         $(".galeryStill").css("overflow-x", "hidden");
