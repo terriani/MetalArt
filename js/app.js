@@ -78,6 +78,8 @@ splash_text.css("opacity", 1);
 main.css("display", "none");
 header.css("display", "none");
 footer.css("display", "none");
+btn_msg.css("display", "none");
+btn_up.css("display", "none");
 
 $(".l1, .l3, .l5, .l7").css("top", 0);
 $(".l2, .l4, .l6, .l8").css("bottom", 0);
@@ -96,6 +98,8 @@ setTimeout(function(){
     main.css("display", "block");
     header.css("display", "block");
     footer.css("display", "block");
+    btn_msg.css("display", "block");
+    btn_up.css("display", "block");
 }, 3500);
 
 });
