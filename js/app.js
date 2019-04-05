@@ -10,6 +10,7 @@ var footer = $("footer");
 var doc = $(document);
 var win = $(window);
 var btn_up = $(".btn-up");
+var btn_msg = $(".btn-msg");
 var about_us = $(".about-us");
 var service = $(".services");
 var clients = $(".clients");
@@ -22,6 +23,7 @@ var card2 = $(".card-2");
 var card3 = $(".card-3");
 var title_service = $(".title-service");
 var html = $("html");
+var flip = $(".flip");
 
 //initialize in page start
 $("document").ready(function(){
@@ -157,31 +159,31 @@ doc.scroll(function(){
 })
 
 function galery_1(){
-    body.css("transform", "rotateY(-180deg)");
-    body.css("background-color", "white");
-    body.css("transition", ".5s linear");
-    body.css("overflow", "hidden");
+    flip.css("transform", "rotateY(-180deg)");
+    flip.css("background-color", "white");
+    flip.css("transition", ".5s linear");
+    flip.css("overflow", "hidden");
 
     setTimeout(function(){
         main.css("display", "none");
         header.css("display", "none");
         footer.css("display", "none");
         $(".galeryStill").css("display", "block");
-        $(".galeryStill").css("transform", "rotateY(180deg)");
+        $(".galeryStill").css("transform", "rotateY(0deg)");
         $(".galeryStill").css("overflow-x", "hidden");
     }, 250);
 }
 
 function closeGalery(){
-    body.css("transform", "rotateY(0deg)");
-    body.css("background-color", "white");
-    body.css("transition", ".5s linear");
+    flip.css("transform", "rotateY(0deg)");
+    flip.css("background-color", "white");
+    flip.css("transition", ".5s linear");
 
     setTimeout(function(){
         main.css("display", "block");
         header.css("display", "block");
         footer.css("display", "block");
-        body.css("background-color", "white");
+        //body.css("background-color", "white");
         $(".galeryStill").css("display", "none");
         $(".galeryStill").css("transform", "rotateY(180deg)");
         $(".galeryStill").css("transition", ".5s linear");
