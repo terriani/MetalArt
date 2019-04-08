@@ -52,6 +52,7 @@ main {
 
 .navbar-fixed{
     z-index: 1000;
+    background-attachment: fixed !important;
 }
 
 .parallax-container{
@@ -85,6 +86,10 @@ nav li a{
 nav li a:hover{
     transform: scale(1.1);
     transition: .1s ease-in-out
+}
+
+.side-nav{
+    z-index: 1000;
 }
 
 .side-nav li a{

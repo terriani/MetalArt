@@ -182,6 +182,8 @@ function closeGalery(){
     flip.css("transform", "rotateY(0deg)");
     flip.css("background-color", "white");
     flip.css("transition", ".5s linear");
+    $(".galeryStill").css("transform", "rotateY(180deg)");
+    $(".galeryStill").css("transition", ".5s linear");
 
     setTimeout(function(){
         main.css("display", "block");
@@ -189,8 +191,9 @@ function closeGalery(){
         footer.css("display", "block");
         //body.css("background-color", "white");
         $(".galeryStill").css("display", "none");
-        $(".galeryStill").css("transform", "rotateY(180deg)");
-        $(".galeryStill").css("transition", ".5s linear");
         $(".galeryStill").css("overflow-x", "hidden");
+        $(".navbar-fixed").css("background-attachment", "fixed");
+        $(".navbar-fixed").css("z-index", "1000");
+        $(".galeryStill").css("z-index", "1");
     }, 250);
 }
