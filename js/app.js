@@ -33,6 +33,12 @@ $("document").ready(function(){
     $(".galeryStill").css("display", "none");
     $(".galeryStill").css("transform", "rotateY(-180deg)");
     $(".galeryStill").css("overflow-x", "hidden")
+    $(".galeryGlass").css("display", "none");
+    $(".galeryGlass").css("transform", "rotateY(-180deg)");
+    $(".galeryGlass").css("overflow-x", "hidden")
+    $(".galeryAluminium").css("display", "none");
+    $(".galeryAluminium").css("transform", "rotateY(-180deg)");
+    $(".galeryAluminium").css("overflow-x", "hidden")
     $(".slider").slider();
     
 
@@ -167,6 +173,8 @@ function galery_1(){
     flip.css("background-color", "white");
     flip.css("transition", ".5s linear");
     flip.css("overflow", "hidden");
+    $(".galeryGlass").css("display", "none");
+    $(".galeryAluminium").css("display", "none");
 
     setTimeout(function(){
         main.css("display", "none");
@@ -178,22 +186,89 @@ function galery_1(){
     }, 250);
 }
 
+function galery_2(){
+    flip.css("transform", "rotateY(-180deg)");
+    flip.css("background-color", "white");
+    flip.css("transition", ".5s linear");
+    flip.css("overflow", "hidden");
+    $(".galeryStill").css("display", "none");
+    $(".galeryAluminium").css("display", "none");
+
+    setTimeout(function(){
+        main.css("display", "none");
+        header.css("display", "none");
+        footer.css("display", "none");
+        $(".galeryGlass").css("display", "block");
+        $(".galeryGlass").css("transform", "rotateY(0deg)");
+        $(".galeryGlass").css("overflow-x", "hidden");
+    }, 250);
+}
+
+
+function galery_3(){
+    flip.css("transform", "rotateY(-180deg)");
+    flip.css("background-color", "white");
+    flip.css("transition", ".5s linear");
+    flip.css("overflow", "hidden");
+    $(".galeryGlass").css("display", "none");
+    $(".galeryStill").css("display", "none");
+
+    setTimeout(function(){
+        main.css("display", "none");
+        header.css("display", "none");
+        footer.css("display", "none");
+        $(".galeryAluminium").css("display", "block");
+        $(".galeryAluminium").css("transform", "rotateY(0deg)");
+        $(".galeryAluminium").css("overflow-x", "hidden");
+    }, 250);
+}
+
+
 function closeGalery(){
     flip.css("transform", "rotateY(0deg)");
     flip.css("background-color", "white");
     flip.css("transition", ".5s linear");
-    $(".galeryStill").css("transform", "rotateY(180deg)");
-    $(".galeryStill").css("transition", ".5s linear");
+
+    
+        $(".galeryStill").css("transform", "rotateY(180deg)");
+        $(".galeryStill").css("transition", ".5s linear");
+    
+        $(".galeryGlass").css("transform", "rotateY(180deg)");
+        $(".galeryGlass").css("transition", ".5s linear");
+    
+        $(".galeryAluminium").css("transform", "rotateY(180deg)");
+        $(".galeryAluminium").css("transition", ".5s linear");
+    
+
+    //$(".galeryGlass").css("transform", "rotateY(180deg)");
+    //$(".galeryAluminium").css("transform", "rotateY(180deg)");
 
     setTimeout(function(){
         main.css("display", "block");
         header.css("display", "block");
         footer.css("display", "block");
         //body.css("background-color", "white");
-        $(".galeryStill").css("display", "none");
-        $(".galeryStill").css("overflow-x", "hidden");
-        $(".navbar-fixed").css("background-attachment", "fixed");
-        $(".navbar-fixed").css("z-index", "1000");
-        $(".galeryStill").css("z-index", "1");
+
+        
+        
+            $(".galeryStill").css("display", "none");
+            $(".galeryStill").css("overflow-x", "hidden");
+            $(".navbar-fixed").css("background-attachment", "fixed");
+            $(".navbar-fixed").css("z-index", "1000");
+            $(".galeryStill").css("z-index", "1");
+        
+            $(".galeryGlass").css("display", "none");
+            $(".galeryGlass").css("overflow-x", "hidden");
+            $(".navbar-fixed").css("background-attachment", "fixed");
+            $(".navbar-fixed").css("z-index", "1000");
+            $(".galeryGlass").css("z-index", "1");   
+        
+            $(".galeryAluminium").css("display", "none");
+            $(".galeryAluminium").css("overflow-x", "hidden");
+            $(".navbar-fixed").css("background-attachment", "fixed");
+            $(".navbar-fixed").css("z-index", "1000");
+            $(".galeryAluminium").css("z-index", "1");
+        
+        
     }, 250);
 }
