@@ -44,7 +44,7 @@
               <li><a href="#about-us" class=" grey-text text-darken-3">Quem somos</a></li>
               <li><a href="#services" class=" green-text"><strong><u>Portifólio</u></strong></a></li>
               <li><a href="#clients" class=" grey-text text-darken-3">Clientes</a></li>
-              <li class="call"><a href="tel:+55-13-98806-8651" class=" grey-text text-darken-3"><i class="material-icons">call</i> - (13) 99999-9999</a></li>
+              <li class="call"><a  class=" grey-text text-darken-3 modal-trigger" data-target="modal1"><i class="material-icons">call</i> - (13) 99999-9999</a></li>
               <li class="call"><a href="#maps" class=" grey-text text-darken-3"><i class="material-icons">map</i> mapa</a></li>
             </ul>
             <ul class="side-nav" id="mobile-menu">
@@ -59,7 +59,7 @@
                 <li class="right-align"><a href="#about-us" class=" grey-text text-darken-3">Quem somos</a></li>
                 <li class="right-align"><a href="#services" class=" green-text"><strong>Portifólio</strong></a></li>
                 <li class="right-align"><a href="#clients" class=" grey-text text-darken-3">Clientes</a></li>
-                <li class="right-align"><a href="https://wa.me/5513974096556?">Chamar no WhatsApp</a></li> 
+                <li class="right-align "><a  data-target="modal1" class="modal-trigger">Chamar no WhatsApp</a></li> 
                 <li class="right-align"><a href="#maps" class=" grey-text text-darken-3">Como Chegar</a></li>
               </ul>
           </div>
@@ -228,9 +228,10 @@
     </footer>
   </div>
     <a href="#up" class="btn-floating btn-large waves-effect waves-light grey lighten-3 btn-up z-depth-5"><i class="material-icons black-text" title="Voltar ao topo">arrow_upward</i></a>
-    <a href="https://wa.me/5513974096556?" class="btn-floating btn-large green darken-1 pulse btn-msg z-depth-5 fixed"><i class="material-icons">forum</i></a>
+    <a data-target="modal1"  class=" btn modal-trigger btn-floating btn-large green darken-1 pulse btn-msg z-depth-5 fixed"><i class="material-icons" title="Chamar no WhatsApp">forum</i></a>
     <div class="galeryStill"><span class="close-galery" onclick="closeGalery();"><i class="material-icons small">arrow_back</i></span>
     
+
     
     <br><br>
     <h4 class="center galeryTitle">Serviços em Ferro</h4>
@@ -373,8 +374,23 @@
     </div>
   </div>
 
-
-
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5 class="center">Digite sua menssagem para o nosso WhatsApp <br></h5>
+      <form action="">
+        <br>
+        <input type="text" name="msg_wp" id="msg_wp" autofocus placeholder="Digite Sua Menssagem...">
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#" onclick="
+        var link = 'http://wa.me/5513974096556?&text=';
+        var msg_wp = $('input[type=text][name=msg_wp]').val();
+        window.open(link+msg_wp);
+        "> <i class="material-icons small blue-text text-darken-1">send</i> </a>
+    </div>
+  </div>
 
     <!-- jQuery CDN -->
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

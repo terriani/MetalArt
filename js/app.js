@@ -40,6 +40,7 @@ $("document").ready(function(){
     $(".galeryAluminium").css("transform", "rotateY(-180deg)");
     $(".galeryAluminium").css("overflow-x", "hidden")
     $(".slider").slider();
+    $(".modal").modal();
     
 
     splash_screen.css("background-color", "black");
