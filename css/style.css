@@ -101,6 +101,10 @@ nav li a:hover{
     transform: none;
 }
 
+.underline{
+    text-decoration: underline;
+}
+
 .title-mobile-menu{
     color: white;
     font-size: 28pt;
